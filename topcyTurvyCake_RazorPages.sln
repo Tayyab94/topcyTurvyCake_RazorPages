@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topcyTurvyCake_RazorPages", "topcyTurvyCake_RazorPages\topcyTurvyCake_RazorPages.csproj", "{44688D02-46D3-4288-9266-E9D568777EB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44688D02-46D3-4288-9266-E9D568777EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44688D02-46D3-4288-9266-E9D568777EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44688D02-46D3-4288-9266-E9D568777EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44688D02-46D3-4288-9266-E9D568777EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {981B3842-74C7-48E6-99F8-D1217266E186}
+	EndGlobalSection
+EndGlobal

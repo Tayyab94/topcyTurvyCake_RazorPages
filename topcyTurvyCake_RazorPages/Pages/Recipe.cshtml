@@ -1,0 +1,58 @@
+﻿@page "{id}"
+
+
+@inject IRecipesService RecipesService
+@{
+    //Layout = "_Layout";
+    //var id = 1;
+
+    var id = long.Parse((string)RouteData.Values["id"]);
+  //  var recipeService = new RecipesService();
+    var recipe = await RecipesService.FindAsync(id);
+
+    ViewData["Title"] = recipe.Name;
+
+}
+
+
+<div class="row recipe">
+
+    <div class="col-md-8">
+
+        <div class="col-md-12">
+
+            <span class="description">
+                @recipe.Description
+            </span>
+
+            <hr />
+        </div>
+
+        <div class="ingredients col-md-4">
+            <h4>Ingredients</h4>
+            <ul>
+                @foreach (var ing in recipe.IngredientsList)
+                {
+                    <li>@ing</li>
+                }
+
+            </ul>
+        </div>
+
+        <div class="directions col-md-8">
+            <h4>Directions</h4>
+            <ol>
+                @foreach (var dir in recipe.DirectionsList)
+                {
+                    <li>@dir.ToString()</li>
+                }
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="col-md-4 text-right">
+        <img class="img img-thumbnail" src="@Url.Content(recipe.GetInlineImageSrc())" />
+    </div>
+
+</div>
